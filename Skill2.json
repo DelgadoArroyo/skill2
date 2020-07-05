@@ -1,0 +1,151 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "practica recuperacion",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DefaultWelcomeIntent",
+                    "slots": [],
+                    "samples": [
+                        "a good day",
+                        "good afternoon",
+                        "good evening",
+                        "good morning",
+                        "greetings",
+                        "hello",
+                        "hello again",
+                        "hello hi",
+                        "hello there",
+                        "hey",
+                        "hey there",
+                        "heya",
+                        "hi",
+                        "hi there",
+                        "howdy",
+                        "i greet you",
+                        "just going to say hi",
+                        "long time no see",
+                        "lovely day isn't it"
+                    ]
+                },
+                {
+                    "name": "SubmitTicket",
+                    "slots": [],
+                    "samples": [
+                        "i have an access problem",
+                        "i want to submit a ticket",
+                        "issue",
+                        "problem",
+                        "submit ticket",
+                        "there is a problem with my computer",
+                        "there is a virus on my computer",
+                        "ticket"
+                    ]
+                },
+                {
+                    "name": "SubmitTicketIssueCategory",
+                    "slots": [
+                        {
+                            "name": "categoryslot",
+                            "type": "CATEGORY"
+                        }
+                    ],
+                    "samples": [
+                        "i have a {categoryslot}",
+                        "i have a {categoryslot} with my laptop",
+                        "i need a {categoryslot} license",
+                        "it falls under {categoryslot}",
+                        "my printer is {categoryslot}",
+                        "my printer {categoryslot}",
+                        "this is an {categoryslot} request"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "CATEGORY",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "authentication",
+                                "synonyms": [
+                                    "authentication",
+                                    "login",
+                                    "access"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "business",
+                                "synonyms": [
+                                    "business",
+                                    "accounting",
+                                    "purchase",
+                                    "advice"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "technical",
+                                "synonyms": [
+                                    "technical",
+                                    "computer issue",
+                                    "computer",
+                                    "software",
+                                    "not working",
+                                    "problem",
+                                    "isn't working"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "performance",
+                                "synonyms": [
+                                    "performance",
+                                    "slow computer",
+                                    "slow",
+                                    "need speed up"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "billing",
+                                "synonyms": [
+                                    "billing"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
